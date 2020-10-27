@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+    <div class="card-columns mt-4">
+
+        {% for url in urls %}
+
+        <div class="card">
+            <div class="card-header">
+                <h4>{{ url.nome }}</h4>
+            </div>
+
+            {% if url.qrcode %}
+            <img class="card-img-top"
+                src="{{ url.qrcode.url }}"
+                alt="{{ url.nome }}">
+            {% endif %}
+
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ url.url }}
+                </h5>
+            </div>
+        </div>
+                {% endfor %}
+    </div>
+
+{% endblock %}

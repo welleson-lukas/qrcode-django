@@ -1,0 +1,26 @@
+html{
+
+}
+
+body{
+
+}
+
+.navbar{
+    background-color: #565656;
+    color: white;
+}
+
+.card-header{
+    color: #ffffff;
+    background-color: #565656;
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+}
+
+.footer {
+    background-color: #565656;
+}
